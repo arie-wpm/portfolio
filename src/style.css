@@ -55,7 +55,7 @@
 }
 
 #nav-name{
-	font-size: 2rem;
+	font-size: 1.5rem;
 	font-weight: bold;
 	@media only screen and (max-width: 600px){
 	}
@@ -90,14 +90,18 @@
 	flex-direction: column;
 
 	@media only screen and (max-width: 600px){
-		height: 400vh;
+		height: 200vh;
 	}
 }
 
 .project-root{
 	display: flex;
 	flex-direction: row;
+	flex-basis: content;
 	height: 32%;
+	width: 100vw;
+	max-width: 100vw;
+	min-width: 100vw;
 	background-color: var(--project-background-1);
 	border-bottom: 4px solid black;
 
@@ -186,7 +190,7 @@
 
 #about-me-blurb{
 	font-weight: 600;
-	font-size: 15pt;
+	font-size: .75rem;
 }
 
 #terminal-horizon-root{
