@@ -22,9 +22,7 @@
 
 #header{
 	background-color: var(--nav-bar-colour);
-	height: 8dvh;
-	min-height: 8dvh;
-	max-height: 8dvh;
+	height: 100px;
 	position: fixed;	
 	width: 100dvw;
 	max-width: 100dvw;
@@ -33,9 +31,7 @@
 }
 
 #header-spacer{
-	height: 8dvh;
-	min-height: 8dvh;
-	max-height: 8dvh;
+	height: 100px;
 	width: 100dvw;
 	max-width: 100dvw;
 	min-width: 100dvw;
@@ -43,29 +39,25 @@
 
 #nav{
 	display: flex;
-	justify-content: space-between;
 	flex-direction: row;
 	align-items: center;
+	justify-content:space-between;
 	height:100%;
-	min-height: 100%;
 	padding:1%;
 }
 #nav p{
 	text-align: left;
-	line-height:100%;
+	line-height:110%;
 }
 
 #nav-name{
 	font-size: 2rem;
 	font-weight: bold;
-	@media only screen and (max-width: 600px){
-		font-size: 1.3rem;
-	}
+	min-width: 0;
 }
 #nav-role{
 	font-size: 0.70rem;
 	color: #403f3f;
-
 }
 #nav-holder{
 	height:100%;
@@ -73,22 +65,29 @@
 	flex-direction:row;
 	column-gap: 1rem;
 	flex-grow: 0;
+	align-items: center;
+
+	@media only screen and (max-width: 600px){
+		height: 85%;
+		column-gap: 0rem;
+	}
 }
 .nav-link{
 	height: 100%;
+	aspect-ratio: 1/1;
 }
 .nav-link img{
 	height:100%;
-	width: 100%;
+	width: auto;
 	object-fit: contain;
 	@media only screen and (max-width: 600px){
-		transform: scale(.75);
+		transform: scale(.65);
 	}
 }
 #linkedin_icon_img{
 	transform: scale(1.45);
 	@media only screen and (max-width: 600px){
-		transform: scale(1.2);
+		transform: scale(.87);
 	}
 }
 #content-holder{
@@ -174,7 +173,7 @@
 .project-media img{
 	height: auto;
 	max-height: 100%;
-	width: auto;
+	width: 100%;
 	max-width: 100%;
 	object-fit: contain;
 	transform: scale(0.75);
@@ -200,7 +199,7 @@
 
 #about-me-blurb{
 	font-weight: 600;
-	font-size: .75rem;
+	font-size: 1rem;
 }
 
 #terminal-horizon-root{
